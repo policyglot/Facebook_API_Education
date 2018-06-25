@@ -9,7 +9,7 @@ SAVE_PATH='D:\Dropbox\Dropbox\Programming\Trainer_Tribe_Data'
 
 #This is the limit on number of days and posts for which data will be extracted
 FEED_LIMIT= 500
-DAYS= 
+#DAYS= 
 
 POST_EDGES= ['attachments','comments', 'likes', 'reactions']
 #These conjunctions
@@ -115,6 +115,6 @@ for group in all_groups:
         for edge in POST_EDGES:
             post[edge]=getPostSummary(ACCESS_TOKEN, post['id'],edge)
 
-completeName = os.path.join(SAVE_PATH, 'GroupwiseCommentsData.json')
+completeName = os.path.join(SAVE_PATH, 'GroupwisePostsData.json')
 with open(completeName, 'w') as outfile:
     json.dump(all_groups, outfile, indent=4)
