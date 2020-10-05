@@ -1,3 +1,4 @@
+from config import ACCESS_TOKEN, TT_MAIN
 import requests
 import json
 import os.path
@@ -35,15 +36,11 @@ FEED_FIELDS='id,created_time,updated_time,from,message'
 
 POST_FIELDS= 'id,created_time,updated_time,from,message'
 
-ACCESS_TOKEN= 'DQVJ2LTNQa3B0M3dra1hfdTJnT2YyNmw2X0cxUHJlMWFtWW9XWW9pbDdSVkJYYkNqMlFfb0RidTU4anRXM3E5LTU2MHFsZA2hnSGZAYUEhPOHBTTGpfYlk3UUh4S2xzX1VMeF9VNkk0cjFvd09hRFlpR21DcERqUlRaYjZAIT3BfcFY1Ry1OVWJsZAkdzS21mSG1xVkZAtb1FSbFU0UDZAUM0wwWTE2TlBpY3VpSmQxd2M5eFlSWmVScnBxbmVIYl9QZAGZASNUw1bDhR'
-
 JSON_KEY_DATA = 'data'
 JSON_KEY_PAGING = 'paging'
 JSON_KEY_NEXT = 'next'
 JSON_KEY_EMAIL = 'email'
 
-#Group IDS
-TT_MAIN="284578622020844"
 
 def getGroupMembers(access_token, group_id):
     endpoint = GRAPH_URL_PREFIX + group_id + MEMBERS_SUFFIX + FIELDS_CONJ + MEMBER_FIELDS
