@@ -1,3 +1,4 @@
+from config import   ACCESS_TOKEN ,  TT_MAIN
 import requests
 import json
 import os.path
@@ -30,12 +31,6 @@ FIELDS_CONJ = '?fields='
 LIMITS_EDGE_CONJ = '?limit='
 LIMITS_CONJ='.limit=('+str(FEED_LIMIT)+')'
 SUMMARY_REQUEST='?summary=true'
-
-
-
-#This is the universal access token used in all requests in this script.
-ACCESS_TOKEN= 'DQVJ2LTNQa3B0M3dra1hfdTJnT2YyNmw2X0cxUHJlMWFtWW9XWW9pbDdSVkJYYkNqMlFfb0RidTU4anRXM3E5LTU2MHFsZA2hnSGZAYUEhPOHBTTGpfYlk3UUh4S2xzX1VMeF9VNkk0cjFvd09hRFlpR21DcERqUlRaYjZAIT3BfcFY1Ry1OVWJsZAkdzS21mSG1xVkZAtb1FSbFU0UDZAUM0wwWTE2TlBpY3VpSmQxd2M5eFlSWmVScnBxbmVIYl9QZAGZASNUw1bDhR'
-TT_MAIN="284578622020844"
 
 #The functions below extract the fields listed above at the required level of the hierarchy
 
@@ -81,7 +76,6 @@ def getJsonSimpleData(access_token, endpoint):
 
 def buildHeader(access_token):
     return {'Authorization': 'Bearer ' + access_token}
-
 
 ###################START DOWNLOAD ###############
 
