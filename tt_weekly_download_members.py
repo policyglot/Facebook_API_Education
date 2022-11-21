@@ -3,6 +3,7 @@ import json
 import os.path
 import datetime
 
+from config import TT_MAIN, TT_COMMUNITY, ACCESS_TOKEN
 
 #This is the common prefix for all calls
 GRAPH_URL_PREFIX = 'https://graph.facebook.com/'
@@ -15,10 +16,7 @@ COMMUNITY_FIELDS='members'
 MEMBER_SUFFIX='/members'
 MEMBER_FIELDS='id, name, email, locale, account_claim_time'
 
-#This is the universal access token used in all requests in this script.
-ACCESS_TOKEN= 'DQVJ2LTNQa3B0M3dra1hfdTJnT2YyNmw2X0cxUHJlMWFtWW9XWW9pbDdSVkJYYkNqMlFfb0RidTU4anRXM3E5LTU2MHFsZA2hnSGZAYUEhPOHBTTGpfYlk3UUh4S2xzX1VMeF9VNkk0cjFvd09hRFlpR21DcERqUlRaYjZAIT3BfcFY1Ry1OVWJsZAkdzS21mSG1xVkZAtb1FSbFU0UDZAUM0wwWTE2TlBpY3VpSmQxd2M5eFlSWmVScnBxbmVIYl9QZAGZASNUw1bDhR'
-TT_MAIN="284578622020844"
-TT_COMMUNITY="112511455959143"
+#This is the universal access token used in all requests in this script
 
 #Adjust how many results you want to stay visible
 LIMIT= 500
