@@ -6,6 +6,7 @@
 
 import requests
 import json
+from config import TT_MAIN
 
 # Constants
 GRAPH_URL_PREFIX = 'https://graph.facebook.com/'
@@ -20,10 +21,6 @@ JSON_KEY_DATA = 'data'
 JSON_KEY_PAGING = 'paging'
 JSON_KEY_NEXT = 'next'
 JSON_KEY_EMAIL = 'email'
-
-#Group IDS
-TT_MAIN="284578622020844"
-
 
 # Methods
 def getAllGroups(access_token, community_id):
